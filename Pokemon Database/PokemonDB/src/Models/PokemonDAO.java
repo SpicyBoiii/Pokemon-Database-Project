@@ -65,14 +65,10 @@ public class PokemonDAO {
 				
 				Pokemon pokemon = new Pokemon();
 					try {
-						
 					pokemon.setP_id(rs.getInt(1));
 					pokemon.setP_name(rs.getString("p_name"));
 					pokemon.setP_ptype(rs.getString("p_ptype"));
 					pokemon.setP_stype(rs.getString("p_stype"));
-					pokemon.setP_generation(rs.getString("p_generation"));;
-					pokemon.setP_ability1(rs.getString("p_ability1"));
-					pokemon.setP_ability2(rs.getString("p_ability2"));
 					pokemon.setP_total(rs.getInt("p_total"));
 					pokemon.setP_hp(rs.getInt("p_hp"));
 					pokemon.setP_attack(rs.getInt("p_attack"));
