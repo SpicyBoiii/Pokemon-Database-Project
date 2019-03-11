@@ -1,7 +1,5 @@
 package Models;
 
-import java.sql.Blob;
-
 public class Pokemon {
 
 	public Pokemon() {
@@ -133,6 +131,7 @@ public class Pokemon {
 	public void setP_species(String p_species) {
 		this.p_species = p_species;
 	}
+
 
 	@Override
 	public String toString() {

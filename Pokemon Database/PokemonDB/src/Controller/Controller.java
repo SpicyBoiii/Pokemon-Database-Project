@@ -24,6 +24,7 @@ public class Controller {
 		"org.eclipse.jetty.annotations.AnnotationConfiguration");
 		ctx.addServlet("Servlets.ServletHome", "/home");
 		ctx.addServlet("Servlets.ServletPokemon", "/pokemon");
+		ctx.addServlet("Servlets.ServletTrainer", "/trainer");
 		server.setHandler(ctx);
 		server.start();
 		server.join();
