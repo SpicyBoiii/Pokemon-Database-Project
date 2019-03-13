@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-	<h1>Choose a database!</h1>
+	<h1><img src="img/Title.png" alt="pokemon-font" border="0"></h1>
 
 	<a href="./pokemon"><img src="img/PokemonDB1.png" onmouseover="this.src='img/PokemonDB2.png'" onmouseout="this.src='img/PokemonDB1.png'" title="Pikachu and Eevee" alt="Pokémon"></a>
 	
