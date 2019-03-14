@@ -7,10 +7,12 @@
 	<link rel="stylesheet" href="site.css">
 </head>
 <body>
-	<img src="headerimg.png"></img>
-	<h1 align="center">Complete Pokémon Pokédex</h1>
-	<a class="btn" href="./home">Back to menu</a>
-	<p>pokemon pokemon pokemon</p>
+	<div>
+		<img src="headerimg.png"></img>
+		<h1 align="center">Complete Pokï¿½mon Pokï¿½dex</h1>
+		<a class="btn" href="./home">Back to menu</a>
+		<p>pokemon pokemon pokemon</p>
+	</div>
 	<div>
 		<div class="Table-Filter">
 			<label for="pkFilter"> Name or ID:</label>
