@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>
-		<img src="headerimg.png"></img>
+		<img src="img/headerimggym.png" id="testIMG"></img>
 		<h1 align="center">Gym Leader Database</h1>
 		<a class="btn" href="./home">Back to menu</a>
 			<p>Table of Gym Leaders from all Pokémon games</p>
@@ -28,7 +28,7 @@
 					<th>Hometown</th>
 					<th>Region</th>
 					<th>Badge</th>
-					<th>Badge Image</th>
+					<th style="padding-right: 1em;">Badge Image</th>
 				</tr>
 			</thead>
 			<tbody>

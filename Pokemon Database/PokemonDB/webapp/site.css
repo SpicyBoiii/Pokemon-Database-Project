@@ -1,5 +1,5 @@
 body{
-	background-image: linear-gradient(-90deg, lightblue, cornflowerblue);
+	background-image: linear-gradient(-90deg, plum, cornflowerblue);
 	font-family: arial;
 	text-align: center;
 }
@@ -9,18 +9,22 @@ table{
 	width: auto;
 	margin: 0 auto;
  	border: 3px solid black;
-  	display: inline-block;
+    
 }
 
 th, td {
   padding: 5px;
   border-bottom: 1px solid #ddd;
+  margin-left: 20px;
 }
 
 table th{
 	background-color: DarkGrey;
 	color: white;
-	margin: 2px;
+	border-bottom:3px solid black;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 
@@ -56,4 +60,9 @@ a.btn{
 #topBtn:hover {
   background-color: #555;
   color: white;
+}
+
+#testIMG {
+	width:250px; /* you can use % */
+    height: auto;
 }

@@ -7,21 +7,19 @@
 	<link rel="stylesheet" href="site.css">
 </head>
 <body>
-	<div>
-		<img src="headerimg.png"></img>
-		<h1 align="center">Complete Pokï¿½mon Pokï¿½dex</h1>
-		<a class="btn" href="./home">Back to menu</a>
-		<p>pokemon pokemon pokemon</p>
-	</div>
+	<img src="img/headerimg2.png"></img>
+	<h1 align="center">Complete Pokémon Pokédex</h1>
+	<a class="btn" href="./home">Back to menu</a>
+	<p>Table of every Pokémon from the Pokémon games</p>
 	<div>
 		<div class="Table-Filter">
-			<label for="pkFilter"> Name or ID:</label>
+			<label for="pkFilter"> Name, ID or Type:</label>
 			<input type="text" id="pkInput" class="input-text" placeholder="Search...">
 		</div>
 		<table id = "pkTable" style="margin: 1em auto;">
 			<thead>
 				<tr>
-					<th>Image</th>
+					<th style="padding-left: 1em;">Image</th>
 					<th>ID</th>
 					<th>Name</th>
 					<th>Primary Type</th>
@@ -83,8 +81,9 @@
 			for (var i = 0; i < rows.length; i++) {
 				var firstCol = rows[i].cells[1].textContent.toUpperCase();
 				var secondCol = rows[i].cells[2].textContent.toUpperCase();
-
-				if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+				var thirdCol = rows[i].cells[3].textContent.toUpperCase();
+				
+				if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1) {
 					rows[i].style.display = "";
 				} else {
 					rows[i].style.display = "none";
