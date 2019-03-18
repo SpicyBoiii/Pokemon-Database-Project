@@ -11,17 +11,17 @@
 		<img src="headerimg.png"></img>
 		<h1 align="center">Gym Leader Database</h1>
 		<a class="btn" href="./home">Back to menu</a>
+			<p>Table of Gym Leaders from all Pokémon games</p>
 	</div>
 	<div>
 		<div class="Table-Filter">
-			<label for="trFilter"> Name or ID:</label>
+			<label for="trFilter"> Name:</label>
 			<input type="text" id="trInput" class="input-text" placeholder="Search...">
 		</div>
 		<table id="trTable" style="margin: 1em auto;">
 			<thead>
 				<tr>
 					<th>Image</th>
-					<th>ID</th>
 					<th>Name</th>
 					<th>Gender</th>
 					<th>Type</th>
@@ -35,7 +35,6 @@
 				<c:forEach items="${allG}" var="c">
 					<tr>
 						<td><img src="imgG/${c.getG_ID()}.png"></img></td>
-						<td>${c.getG_ID()}</td>
 						<td>${c.getG_Name()}</td>
 						<td>${c.getG_Gender()}</td>
 						<td>${c.getG_Type()}</td>
@@ -74,10 +73,9 @@
 			var rows = document.querySelector("#trTable tbody").rows;
 
 			for (var i = 0; i < rows.length; i++) {
-				var firstCol = rows[i].cells[1].textContent.toUpperCase();
-				var secondCol = rows[i].cells[2].textContent.toUpperCase();
+				var secondCol = rows[i].cells[1].textContent.toUpperCase();
 
-				if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1) {
+				if (secondCol.indexOf(filter) > -1) {
 					rows[i].style.display = "";
 				} else {
 					rows[i].style.display = "none";
