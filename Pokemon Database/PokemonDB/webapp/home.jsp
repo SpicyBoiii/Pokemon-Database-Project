@@ -14,4 +14,5 @@
 	<a href="./trainer"><img src="img/TrainerDB3.png" onmouseover="this.src='img/TrainerDB4.png'" onmouseout="this.src='img/TrainerDB3.png'"title="Trainer" alt="Trainer" id = "TrainerImg"></a>
 
 </body>
+<footer>All right reserved Pokémon Company 1998 - 2019</footer>
 </html>

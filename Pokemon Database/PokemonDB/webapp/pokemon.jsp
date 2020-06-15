@@ -10,7 +10,7 @@
 	<img src="img/headerimg2.png"></img>
 	<h1 align="center">Complete Pokémon Pokédex</h1>
 	<a class="btn" href="./home">Back to menu</a>
-	<p>Table of every Pokémon from the Pokémon games</p>
+	<p></p>
 	<div>
 		<div class="Table-Filter">
 			<label for="pkFilter"> Name, ID or Type:</label>
@@ -82,8 +82,9 @@
 				var firstCol = rows[i].cells[1].textContent.toUpperCase();
 				var secondCol = rows[i].cells[2].textContent.toUpperCase();
 				var thirdCol = rows[i].cells[3].textContent.toUpperCase();
+				var forthCol = rows[i].cells[4].textContent.toUpperCase();
 				
-				if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1) {
+				if (firstCol.indexOf(filter) > -1 || secondCol.indexOf(filter) > -1 || thirdCol.indexOf(filter) > -1 || forthCol.indexOf(filter) > -1) {
 					rows[i].style.display = "";
 				} else {
 					rows[i].style.display = "none";
@@ -94,4 +95,5 @@
 		document.querySelector('#pkInput').addEventListener('keyup', filterTable, false);
 	</script>
 </body>
+<footer>All right reserved Pokémon Company 1998 - 2019</footer>
 </html>

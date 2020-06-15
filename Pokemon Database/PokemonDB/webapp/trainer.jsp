@@ -11,7 +11,7 @@
 		<img src="img/headerimggym.png" id="testIMG"></img>
 		<h1 align="center">Gym Leader Database</h1>
 		<a class="btn" href="./home">Back to menu</a>
-			<p>Table of Gym Leaders from all Pokémon games</p>
+			<p></p>
 	</div>
 	<div>
 		<div class="Table-Filter">
@@ -86,4 +86,5 @@
 		document.querySelector('#trInput').addEventListener('keyup', filterTable, false);
 	</script>
 </body>
+<footer>All right reserved Pokémon Company 1998 - 2019</footer>
 </html>
